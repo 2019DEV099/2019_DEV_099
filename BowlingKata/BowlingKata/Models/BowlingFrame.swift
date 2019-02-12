@@ -20,6 +20,7 @@ struct BowlingFrame
   static let maxPinsKnockedInFrame = 10
   static let spareSymbol: Character = "/"
   static let strikeSymbol: Character = "X"
+  static let missSymbol: Character = "-"
   
   let pinsKnockedDownAtThrow: [Int]
   let bonus: BowlingBonus
@@ -53,11 +54,15 @@ fileprivate func createPinsTakenInFrame(_ bowlingFrame: String) -> [Int]
     {
       pinsKnockedDown.append(number)
     }
-    if c == "/"
+    else if c == BowlingFrame.spareSymbol
     {
       // If I have a spare I must have a number before it, this is whty I use the !
       let pinsKnockedToSpare = BowlingFrame.maxPinsKnockedInFrame - pinsKnockedDown.last!
       pinsKnockedDown.append(pinsKnockedToSpare)
+    }
+    else if c == BowlingFrame.missSymbol
+    {
+      pinsKnockedDown.append(0)
     }
   }
   
