@@ -15,6 +15,7 @@
 		7D53926C2212E02800107157 /* BowlingKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D53926B2212E02800107157 /* BowlingKataTests.swift */; };
 		7D5392782212FC2B00107157 /* BowlingFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5392772212FC2B00107157 /* BowlingFrame.swift */; };
 		7D53927A2213073B00107157 /* BowlingScoreCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5392792213073B00107157 /* BowlingScoreCalculator.swift */; };
+		7D53927D22130ED400107157 /* BowlingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D53927C22130ED400107157 /* BowlingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		7D53926D2212E02800107157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D5392772212FC2B00107157 /* BowlingFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingFrame.swift; sourceTree = "<group>"; };
 		7D5392792213073B00107157 /* BowlingScoreCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingScoreCalculator.swift; sourceTree = "<group>"; };
+		7D53927C22130ED400107157 /* BowlingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		7D5392552212E02500107157 /* BowlingKata */ = {
 			isa = PBXGroup;
 			children = (
+				7D53927B22130EB400107157 /* ViewModels */,
 				7D5392762212FA5300107157 /* Models */,
 				7D5392562212E02500107157 /* AppDelegate.swift */,
 				7D5392582212E02500107157 /* BowlingViewController.swift */,
@@ -108,6 +111,14 @@
 				7D5392792213073B00107157 /* BowlingScoreCalculator.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7D53927B22130EB400107157 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7D53927C22130ED400107157 /* BowlingViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			files = (
 				7D5392592212E02500107157 /* BowlingViewController.swift in Sources */,
 				7D5392572212E02500107157 /* AppDelegate.swift in Sources */,
+				7D53927D22130ED400107157 /* BowlingViewModel.swift in Sources */,
 				7D5392782212FC2B00107157 /* BowlingFrame.swift in Sources */,
 				7D53927A2213073B00107157 /* BowlingScoreCalculator.swift in Sources */,
 			);

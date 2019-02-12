@@ -39,14 +39,13 @@ class BowlingKataTests: XCTestCase {
   func testBowlingPerfectScore()
   {
     let s = "X X X X X X X X X X X X" // 300
-  /// "5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/5" -> 150
     let score = BowlingScoreCalculator.calculateGameScoreFromFramesString(s)
     XCTAssert(score == 300)
   }
   
   func testBowlingAllSpareScores()
   {
-    let s = "5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/5" // -> 150
+    let s = "5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/5" // -> 150
     let score = BowlingScoreCalculator.calculateGameScoreFromFramesString(s)
     XCTAssert(score == 150)
   }
