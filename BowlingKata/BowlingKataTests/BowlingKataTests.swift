@@ -35,21 +35,30 @@ class BowlingKataTests: XCTestCase {
     XCTAssert(frame.bonus == .strike)
     XCTAssert(frame.pinsKnockedDownAtThrow.reduce(0, +) == 10)
   }
+  
+  func testBowlingPerfectScore()
+  {
+    let s = "X X X X X X X X X X X X" // 300
+  /// "5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/5" -> 150
+    let score = BowlingScoreCalculator.calculateGameScoreFromFramesString(s)
+    XCTAssert(score == 300)
+  }
+  
+  func testBowlingAllSpareScores()
+  {
+    let s = "5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/5" // -> 150
+    let score = BowlingScoreCalculator.calculateGameScoreFromFramesString(s)
+    XCTAssert(score == 150)
+  }
+  
+  func testBowlingNoSpareAndNoStrikes()
+  {
+    let s = "9- 9- 9- 9- 9- 9- 9- 9- 9- 9-" // 90
+    let score = BowlingScoreCalculator.calculateGameScoreFromFramesString(s)
+    XCTAssert(score == 90)
+  }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
