@@ -13,6 +13,7 @@
 		7D53925E2212E02800107157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D53925D2212E02800107157 /* Assets.xcassets */; };
 		7D5392612212E02800107157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D53925F2212E02800107157 /* LaunchScreen.storyboard */; };
 		7D53926C2212E02800107157 /* BowlingKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D53926B2212E02800107157 /* BowlingKataTests.swift */; };
+		7D5392782212FC2B00107157 /* BowlingFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5392772212FC2B00107157 /* BowlingFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7D5392672212E02800107157 /* BowlingKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D53926B2212E02800107157 /* BowlingKataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingKataTests.swift; sourceTree = "<group>"; };
 		7D53926D2212E02800107157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D5392772212FC2B00107157 /* BowlingFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingFrame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		7D5392762212FA5300107157 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7D5392772212FC2B00107157 /* BowlingFrame.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				7D5392592212E02500107157 /* ViewController.swift in Sources */,
 				7D5392572212E02500107157 /* AppDelegate.swift in Sources */,
+				7D5392782212FC2B00107157 /* BowlingFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

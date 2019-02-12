@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  BowlingKata
 //
-//  Created by Ruffolo Antonio on 12/02/2019.
-//  Copyright © 2019 Antonio Ruffolo. All rights reserved.
+//  Created by on 12/02/2019.
+//  Copyright © 2019 . All rights reserved.
 //
 
 import UIKit
