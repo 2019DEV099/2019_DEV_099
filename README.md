@@ -11,11 +11,10 @@ in the assignment.
 Also there are unit test that can be used to test the code and check coverage.
 
 ## Example of Valid string inputs
-
-"X X X X X X X X X X X X" // 300
-"7/ 4/ 35 X 7/ 12 -1 -9 X 53" // 105
-"9- 9- 9- 9- 9- 9- 9- 9- 9- 9-" // 90
-"5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/5" // 150
-"X X X X X X X X X X33" // 279
+"X X X X X X X X X X X X" // 300.
+"7/ 4/ 35 X 7/ 12 -1 -9 X 53" // 105.
+"9- 9- 9- 9- 9- 9- 9- 9- 9- 9-" // 90.
+"5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/5" // 150.
+"X X X X X X X X X X33" // 279.
 
 
